@@ -3,3 +3,23 @@
 print("hello world")
 
 feature line
+
+
+def computepay(hours, rate):
+    if hours > 40 :
+        reg = hours*rate
+        ovr = (hours-40)*(rate*0.5)
+        pay = reg+ovr
+
+    else:
+        pay = hours*rate
+    print('payment = ',pay)
+
+
+xhrs = input('Enter Hours: ')
+xrate = input('Enter Rate: ')
+
+hours = float(xhrs)
+rate = float(xrate)
+
+computepay(hours, rate) 
